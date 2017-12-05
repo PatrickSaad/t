@@ -39,9 +39,29 @@ public class PaperService {
 		return jsonResult;
 	}
 	
+	@SuppressWarnings("unchecked")
+	private Map<String, Object> singleToJson(Paper paper) {
+		ObjectMapper objectMapper = new ObjectMapper();
+		Map<String, Object> jsonResult = new HashMap<String, Object>();
+
+		try {
+			String paperJson = objectMapper.writeValueAsString(paper);
+			jsonResult = objectMapper.readValue(paperJson, Map.class);
+		}
+		catch(Exception s){}
+
+		return jsonResult;
+	}
+	
 	@Transactional(readOnly = true)
 	public Map<String, Object> getPapers(int limit) {
 		Collection<Paper> result = paperRepository.getPapers(limit);
 		return toD3Format(result);
+	}
+	
+	@Transactional(readOnly = true)
+	public Map<String, Object> getPaper(String id) {
+		Paper result = paperRepository.findByPaperId(id);
+		return singleToJson(result);
 	}
 }

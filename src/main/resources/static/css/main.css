@@ -1,3 +1,14 @@
+body{
+	margin-bottom: 80px;
+}
+.btn-learn-more{
+	position: absolute;
+	left: -15px;
+	top: 8px;
+}
+.list-group-item{
+	position: relative;
+}
 #search .form-control{
 width: 40%;
 }
@@ -20,8 +31,8 @@ margin-bottom: 40px;
 #stories .head{
 	margin-bottom: 20px;
 }
-#stories .results .entry {
-	margin-bottom: 20px;
+.entry {
+	margin-bottom: 20px !important;
 }
 #stories .results .entry .title{
 	height: 80px;
@@ -42,4 +53,69 @@ margin-bottom: 40px;
 	padding-right: 10px;
 	padding-left: 10px;
 }
+
+
+#cy {
+  height: 400px;
+  width: 100%;
+  background-color: #fbfbfb;
+}
+
+.login-block{
+	background: #aab5dc;
+	background: -webkit-linear-gradient(to bottom, #FFB88C, #DE6262);
+	background: linear-gradient(to bottom, #aab5dc, #ffffff);
+	float:left;
+	width:100%;
+	padding : 50px 0;
+}
+.login-block h2{
+	margin-bottom: 30px;
+}
+
+#story-single .content{
+	margin-top: 40px;
+}
+iframe{
+	width: 100%;
+	height: 400px
+}
+#story-single img, .cy, iframe{
+	display: block;
+	margin: 20px 0;
+}
+.actions{
+	margin-top: 15px;
+}
+.actions button{
+	display: inline-block;
+	margin: 0 10px 10px 0;
+	cursor: pointer;
+}
+.actions button a{
+	color: #fff;
+}
+.actions button a:hover{
+	text-decoration: none;
+}
+
+.lead-action{
+	margin: 40px 0;
+}
+
+#view-quizz-alert, #quizz-questions {
+	display: none;
+}
+#form-quizz .question{
+	margin-bottom: 40px;
+}
+
+#profile-tabs{
+	margin-top: 40px;
+}
+#profile-tabs .nav-tabs{
+	margin-bottom: 20px;
+}
+#profile-summary{
+	margin-top: 20px;
 }

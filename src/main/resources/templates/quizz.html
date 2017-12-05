@@ -1,0 +1,142 @@
+<div th:replace="header"></div>
+
+<div class="jumbotron">
+	<div class="container">
+		<h1 class="display-3">Quizz title goes here</h1>
+		<p class="lead">Test your knowledge about the shared stories entities by completing some questions!</p>
+		<hr class="my-4">
+		<p>Before you continue, please check the quizz's pre-requisites below!</p>
+	</div>
+</div>
+
+<div class="container">
+	<div class="alert alert-success" role="alert">
+		<h4 class="alert-heading">Pre-requisites!</h4>
+		<p>Before continuing, make sure you read the following papers which the quizz is based on:</p>
+		<hr>
+		<div class="row">
+			
+			<div class="col-sm-4 entry">
+				<div class="list-group-item list-group-item-action flex-column align-items-start">
+					<div class="d-flex w-100 justify-content-between">
+						<h6 class="mb-1 title"><i class="fa fa-user" aria-hidden="true"></i> Paper title</h6>
+					</div>
+					<div class="actions">
+						<button type="button" class="btn btn-primary btn-sm">
+							<a target="_blank" href="http://google.com"><i class="fa fa-book" aria-hidden="true"></i> Read paper</a>
+						</button>
+						<button type="button" class="btn btn-primary btn-sm btn-read-this">
+							<i class="fa fa-check" aria-hidden="true"></i> I read this!
+						</button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-4 entry">
+				<div class="list-group-item list-group-item-action flex-column align-items-start">
+					<div class="d-flex w-100 justify-content-between">
+						<h6 class="mb-1 title"><i class="fa fa-user" aria-hidden="true"></i> Paper title</h6>
+					</div>
+					<div class="actions">
+						<button type="button" class="btn btn-primary btn-sm">
+							<a target="_blank" href="http://google.com"><i class="fa fa-book" aria-hidden="true"></i> Read paper</a>
+						</button>
+						<button type="button" class="btn btn-primary btn-sm btn-read-this">
+							<i class="fa fa-check" aria-hidden="true"></i> I read this!
+						</button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-4 entry">
+				<div class="list-group-item list-group-item-action flex-column align-items-start">
+					<div class="d-flex w-100 justify-content-between">
+						<h6 class="mb-1 title"><i class="fa fa-user" aria-hidden="true"></i> Paper title</h6>
+					</div>
+					<div class="actions">
+						<button type="button" class="btn btn-primary btn-sm">
+							<a target="_blank" href="http://google.com"><i class="fa fa-book" aria-hidden="true"></i> Read paper</a>
+						</button>
+						<button type="button" class="btn btn-primary btn-sm btn-read-this">
+							<i class="fa fa-check" aria-hidden="true"></i> I read this!
+						</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-12">
+			<p class="lead-action text-center">
+				<a class="btn btn-success btn-lg" id="view-quizz" href="#" role="button">View Quizz</a>
+			</p>
+			<div id="view-quizz-alert" class="alert alert-danger" role="alert"></div>
+		</div>
+	</div>
+	
+	<div id="quizz-questions">
+		<div class="row justify-content-center">
+			<div class="col-lg-6">
+				
+				<form class="form" action="#" method="post" id="form-quizz">
+					<div class="custom-controls-stacked">
+						
+						<div class="question custom-controls-stacked">
+							<h5>1- Question goes here</h5>
+							<label class="custom-control custom-radio">
+								<input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
+								<span class="custom-control-indicator"></span>
+								<span class="custom-control-description">Toggle this custom radio</span>
+							</label>
+							<label class="custom-control custom-radio">
+								<input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
+								<span class="custom-control-indicator"></span>
+								<span class="custom-control-description">Toggle this custom radio</span>
+							</label>
+						</div>
+						
+						<div class="question custom-controls-stacked">
+							<h5>2- Question goes here</h5>
+							<label class="custom-control custom-radio">
+								<input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
+								<span class="custom-control-indicator"></span>
+								<span class="custom-control-description">Toggle this custom radio</span>
+							</label>
+							<label class="custom-control custom-radio">
+								<input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
+								<span class="custom-control-indicator"></span>
+								<span class="custom-control-description">Toggle this custom radio</span>
+							</label>
+						</div>
+						
+						<div class="question custom-controls-stacked">
+							<h5>3- Question goes here</h5>
+							<label class="custom-control custom-radio">
+								<input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
+								<span class="custom-control-indicator"></span>
+								<span class="custom-control-description">Toggle this custom radio</span>
+							</label>
+							<label class="custom-control custom-radio">
+								<input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
+								<span class="custom-control-indicator"></span>
+								<span class="custom-control-description">Toggle this custom radio</span>
+							</label>
+						</div>
+						
+					</div>
+						
+					<input class="form-control" type="submit" value="Submit Answers" />
+				
+				</form>
+				
+				
+			</div>
+		</div>
+	
+	</div>
+	
+</div>
+
+<div th:replace="footer"></div>

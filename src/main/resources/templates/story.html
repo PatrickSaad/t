@@ -1,0 +1,68 @@
+<div th:replace="header"></div>
+
+<section class="jumbotron text-center">
+	<div class="container">
+		<h1 class="jumbotron-heading"><span th:text="${paper.title}"></span></h1>
+		<p><small>Paper ID: <span th:text="${paper.paperId}"></span></small></p>
+		<p>
+			<a title="Open PDF" target="_open" th:href="@{${paper.s2Url}}" class="btn btn-primary">Read PDF</a>
+			<a href="#" class="btn btn-secondary">Mark as read</a>
+		</p>
+	</div>
+</section>
+
+<div class="container">
+	
+	<div class="row">
+		
+		<div class="col-sm-3 entry" th:each="role : ${paper.roles}" th:if="${!#lists.isEmpty(paper.roles)}">
+			<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+				<button type="button" class="btn btn-primary btn-sm btn-learn-more">
+					<i class="fa fa-plus" aria-hidden="true"></i>
+				</button>
+				<div class="d-flex w-100 justify-content-between">
+					<h6 class="mb-1 title"><i class="fa fa-user" aria-hidden="true"></i> <span th:text="${role.person.name}"></span></h6>
+				</div>
+			</a>
+		</div>
+
+		<div class="col-sm-3 entry" th:if="${!#strings.isEmpty(paper.year)}">
+			<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+				<button type="button" class="btn btn-primary btn-sm btn-learn-more">
+					<i class="fa fa-plus" aria-hidden="true"></i>
+				</button>
+				<div class="d-flex w-100 justify-content-between">
+					<h6 class="mb-1 title"><i class="fa fa-user" aria-hidden="true"></i> <span th:text="${paper.year}"></span></h6>
+				</div>
+			</a>
+		</div>
+		
+		<div class="col-sm-3 entry" th:if="${!#strings.isEmpty(paper.venue)}">
+			<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+				<button type="button" class="btn btn-primary btn-sm btn-learn-more">
+					<i class="fa fa-plus" aria-hidden="true"></i>
+				</button>
+				<div class="d-flex w-100 justify-content-between">
+					<h6 class="mb-1 title"><i class="fa fa-user" aria-hidden="true"></i> <span th:text="${paper.venue}"></span></h6>
+				</div>
+			</a>
+		</div>
+
+	</div>
+	
+	<div class="row justify-content-center">
+		<div class="col-lg-9">
+			<div id="story-single">
+				<div class="content">
+				
+					<h5>Abstract</h5>
+					<div class="abstract" th:if="${!#strings.isEmpty(paper.paperAbstract)}" th:text="${paper.paperAbstract}"></div>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<div th:replace="footer"></div>

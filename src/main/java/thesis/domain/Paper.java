@@ -18,12 +18,14 @@ public class Paper {
 	private Long id;
 
 	private String paperId;
-
 	private String title;
 	private int year;
+	private String paperAbstract;
+	private String s2Url;
+	private String venue;
 
 	@Relationship(type = "AUTHOR_IN", direction = Relationship.INCOMING)
-	private List<Role> roles = new ArrayList<>();
+	private List<Role> persons = new ArrayList<>();
 
 	public Paper() {
 	}
@@ -36,35 +38,35 @@ public class Paper {
 		return id;
 	}
 
-	public void setId(Long id) {
-		this.id = id;
-	}
-
 	public String getTitle() {
 		return title;
 	}
 
 	public Collection<Role> getRoles() {
-		return roles;
+		return persons;
 	}
 
 	public void addRole(Role role) {
-		this.roles.add(role);
+		this.persons.add(role);
 	}
 	
 	public String getPaperId() {
 		return paperId;
-	}
-
-	public void setPaperId(String paperId) {
-		this.paperId = paperId;
 	}
 	
 	public int getYear() {
 		return year;
 	}
 
-	public void setYear(int year) {
-		this.year = year;
+	public String getPaperAbstract() {
+		return paperAbstract;
+	}
+
+	public String getVenue() {
+		return venue;
+	}
+
+	public String getS2Url() {
+		return s2Url;
 	}
 }

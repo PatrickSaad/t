@@ -1,0 +1,77 @@
+<div th:replace="header"></div>
+
+<div class="container">
+	<div class="row justify-content-center">
+			<div class="col-8">
+					<div class="card">
+							<div class="card-body">
+									<div class="row">
+											<div class="col-12 col-lg-8 col-md-6">
+													<h3 class="mb-0 text-truncated">Patrick Saad</h3>
+													<p class="lead">Web Developer</p>
+													<p>Small bio goes here</p>
+													<p>
+														<span class="badge badge-info tags">machine learning</span> 
+														<span class="badge badge-info tags">search engines</span>
+														<span class="badge badge-info tags">natural language processing</span>
+													</p>
+											</div>
+											<div class="col-12 col-lg-4 col-md-6 text-center">
+												<img src="img/user.jpg" alt="" class="mx-auto rounded-circle img-fluid">
+												<br>
+												<h2>Level 9000</h2>
+											</div>
+										</div>
+										
+										<div class="row" id="profile-summary">	
+											<div class="col-12 col-lg-4">
+													<h3 class="mb-0">50</h3>
+													<small>Papers read</small>
+											</div>
+											<div class="col-12 col-lg-4">
+													<h3 class="mb-0">10</h3>
+													<small>Quizzes taken</small>
+											</div>
+											<div class="col-12 col-lg-4">
+													<h3 class="mb-0">4</h3>
+													<small>Fields explored</small>
+											</div>
+											
+										</div>
+									
+										<div class="row" id="profile-tabs">
+											<div class="col-lg-12">
+												<nav class="nav nav-tabs" id="myTab" role="tablist">
+													<a class="nav-item nav-link active" id="nav-papers-tab" data-toggle="tab" href="#nav-papers" role="tab" aria-controls="nav-papers" aria-selected="true">Papers</a>
+													<a class="nav-item nav-link" id="nav-quizz-tab" data-toggle="tab" href="#nav-quizz" role="tab" aria-controls="nav-quizz" aria-selected="false">Quizzes</a>
+												</nav>
+												
+												<div class="tab-content" id="nav-tabContent">
+													<div class="tab-pane fade show active" id="nav-papers" role="tabpanel" aria-labelledby="nav-papers-tab">
+														<ul class="list-group">
+															<li class="list-group-item active">Cras justo odio</li>
+															<li class="list-group-item">Dapibus ac facilisis in</li>
+															<li class="list-group-item">Morbi leo risus</li>
+															<li class="list-group-item">Porta ac consectetur ac</li>
+															<li class="list-group-item">Vestibulum at eros</li>
+														</ul>
+													</div>
+													<div class="tab-pane fade" id="nav-quizz" role="tabpanel" aria-labelledby="nav-quizz-tab">
+														<ul class="list-group">
+															<li class="list-group-item active">Cras justo odio</li>
+															<li class="list-group-item">Dapibus ac facilisis in</li>
+															<li class="list-group-item">Morbi leo risus</li>
+															<li class="list-group-item">Porta ac consectetur ac</li>
+															<li class="list-group-item">Vestibulum at eros</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>
+</div>
+
+<div th:replace="footer"></div>
