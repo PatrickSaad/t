@@ -1,0 +1,45 @@
+#search .form-control{
+width: 40%;
+}
+.navbar{
+margin-bottom: 40px;
+}
+.node { stroke: #222; stroke-width: 1.5px; }
+.node.actor { fill: #888; }
+.node.movie { fill: #BBB; }
+.link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; }
+.table-hover > tbody > tr:hover > td, .table-hover > tbody > tr:hover > th {
+	background-color: #bff9b4;
+	cursor: pointer;
+}
+#stories{
+	display: none;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+#stories .head{
+	margin-bottom: 20px;
+}
+#stories .results .entry {
+	margin-bottom: 20px;
+}
+#stories .results .entry .title{
+	height: 80px;
+	overflow: hidden;
+}
+#stories .results .entry .content{
+	max-height: 150px;
+	overflow:hidden; 
+}
+.results .ratings{
+	margin-top: 10px;
+}
+.no-gutters {
+	margin-right: -10px;
+	margin-left: -10px;
+}
+.no-gutters>.col, .no-gutters>[class*=col-] {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+}

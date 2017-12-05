@@ -1,0 +1,8 @@
+thesis\domain\Role.class
+thesis\domain\Person.class
+thesis\controller\MainController.class
+thesis\repositories\PaperRepository.class
+thesis\services\PaperService.class
+thesis\repositories\PersonRepository.class
+thesis\Application.class
+thesis\domain\Paper.class

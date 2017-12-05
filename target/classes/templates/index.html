@@ -1,0 +1,49 @@
+<div th:replace="header"></div>
+
+<div class="container">
+
+	<div class="row" id="search">
+		<div class="col-sm-12 col-md-12">
+			<form id="search-form" class="form-inline my-2 my-lg-0" method="POST">
+				<input name="s" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</div>
+	</div>
+		
+	<div class="row" id="stories">
+			<div class="col-md-12">
+					<div class="panel panel-default">
+							<div class="panel-heading"><h4 class="head">Stories</h4></div>
+							<div id="stories-results" class="results">
+								<div class="list-group">
+									<div class="row no-gutters entries"></div>
+								</div>
+							</div>
+					</div>
+			</div>
+	</div>
+	
+</div>
+
+<!-- Template -->
+<script id="hidden-story-template" type="text/x-custom-template">
+	<div class="col-sm-4">
+		<a href="#" class="entry list-group-item list-group-item-action flex-column align-items-start">
+			<div class="d-flex w-100 justify-content-between">
+				<h6 class="mb-1 title">This is a story title</h6>
+			</div>
+			<p class="content mb-1"></p>
+			<div class="ratings">
+				<button type="button" class="btn btn-primary btn-sm">
+					<i class="fa fa-thumbs-up" aria-hidden="true"></i> <span class="badge badge-light rating-thumbs-up">4</span>
+				</button>
+				<button type="button" class="btn btn-primary btn-sm">
+					<i class="fa fa-thumbs-down" aria-hidden="true"></i> <span class="badge badge-light rating-thumbs-down">4</span>
+				</button>
+			</div>
+		</a>
+	</div>
+</script>
+
+<div th:replace="footer"></div>
